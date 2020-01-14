@@ -224,6 +224,14 @@ li {
   font-size: 23px;
   letter-spacing: 5px; }
 
+.recipes {
+  padding: 135px 0;
+  background: url("/assets/images/images (1).jpeg");
+  background-size: 100% 100%;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase; }
+
 .footer {
   padding-top: 95px; }
   .footer__h5 {
