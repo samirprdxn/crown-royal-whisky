@@ -1,8 +1,6 @@
-@charset "utf-8";
 /* ==========================================================================
    1. CSS Reset Code
    ========================================================================== */
-
 /* 1.1. Eric Meyers Reset
    http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -20,135 +18,279 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+  display: block; }
 
 /* Force scrollbar */
-html { overflow-y: scroll; }
+html {
+  overflow-y: scroll; }
 
 /* Align radios and text inputs with their label */
-
-input[type='radio'] { vertical-align: text-bottom; }
+input[type='radio'] {
+  vertical-align: text-bottom; }
 
 /* Hand cursor on clickable input elements */
 label,
 input[type='button'],
 input[type='submit'],
 button {
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 strong {
   font-weight: bold;
   font-family: inherit;
-  font-size: inherit;
-}
+  font-size: inherit; }
 
-em { font-style: italic; }
+em {
+  font-style: italic; }
 
 img {
   width: 100%;
   border: 0;
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
 sub,
 sup {
   vertical-align: baseline;
   position: relative;
   font-size: 55%;
-  line-height: 0;
-}
+  line-height: 0; }
 
-sup { top: -.7em; }
-sub { bottom: -.25em; }
+sup {
+  top: -.7em; }
+
+sub {
+  bottom: -.25em; }
 
 /* 1.2. Clear Fix
    ========================== */
-
 .cf:before,
 .cf:after {
   display: table;
-  content: " ";
-}
+  content: " "; }
 
-.cf:after { clear: both; }
-.cf { *zoom: 1; }
+.cf:after {
+  clear: both; }
+
+.cf {
+  *zoom: 1; }
 
 /*for all*/
 body {
   box-sizing: border-box;
-  font-family: sans-serif;
-}
+  font-family: sans-serif; }
 
-a { 
+a {
   display: inline-block;
-  text-decoration: none; 
-}
+  text-decoration: none; }
 
 li {
   display: inline-block;
-  list-style-type: none;
-}
+  list-style-type: none; }
 
 /*for wrapper*/
 .wrapper {
-  max-width: 1360px;
-  width: 86%; 
-  margin: 0 auto;
-}
-/*=================================
-  Header styling starts here
-=================================*/
+  max-width: 1286px;
+  width: 92%;
+  margin: 0 auto; }
 
+.header {
+  padding: 40px 0; }
+  .header .wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; }
+  .header__h1 {
+    flex-basis: 14.5%; }
 
+.social-links {
+  margin-top: 3px;
+  flex-basis: 3.7%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+  .social-links__link {
+    text-indent: -9999px; }
+    .social-links__link::before {
+      float: right;
+      color: #ad2beb;
+      font-family: FontAwesome;
+      font-size: 13px;
+      text-indent: 0; }
+    .social-links__link--instagram::before {
+      content: '\f16d'; }
+    .social-links__link--facebook::before {
+      content: '\f082'; }
+    .social-links__link:hover::before {
+      color: #512d6e;
+      -webkit-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      transition: .5s ease-in-out; }
 
+.nav {
+  margin-left: 6%;
+  flex-basis: 68%; }
+  .nav__list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; }
+  .nav__link {
+    color: #ad2beb;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+    .nav__link--active::before {
+      content: '\f0c9';
+      padding-right: 9px;
+      font-family: FontAwesome; }
+    .nav__link:hover {
+      color: #512d6e;
+      -webkit-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      transition: .5s ease-in-out; }
+  .nav .hamburger {
+    display: none; }
 
+.xtra-rare__list {
+  margin-bottom: 138px; }
+.xtra-rare__link {
+  color: #ad2beb;
+  font-size: 12px;
+  text-transform: capitalize;
+  font-weight: 600; }
+  .xtra-rare__link--span {
+    color: #512d6e; }
+  .xtra-rare__link:hover {
+    color: #512d6e;
+    -webkit-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out; }
+.xtra-rare__figure {
+  width: 36%;
+  padding-top: 100px;
+  display: inline-block;
+  vertical-align: top;
+  vertical-align: bottom; }
+.xtra-rare .crwon-royal-xr {
+  width: 39%;
+  margin-left: 15%;
+  display: inline-block;
+  vertical-align: top;
+  color: #162d71;
+  text-align: center; }
+  .xtra-rare .crwon-royal-xr__h2 {
+    margin-bottom: 40px;
+    font-family: serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+  .xtra-rare .crwon-royal-xr__span {
+    margin-bottom: 74px;
+    display: block;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+  .xtra-rare .crwon-royal-xr__p {
+    margin-bottom: 61px;
+    color: #512d6e;
+    font-family: serif;
+    font-size: 20px;
+    line-height: 1.8; }
+  .xtra-rare .crwon-royal-xr__link {
+    padding: 14px 32px;
+    border: 2px solid #e3b87e;
+    margin-bottom: 58px;
+    color: #ad2beb;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+    .xtra-rare .crwon-royal-xr__link:hover {
+      background-color: #e3b87e;
+      -webkit-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      transition: .5s ease-in-out; }
+  .xtra-rare .crwon-royal-xr .share {
+    color: #ad2beb; }
+    .xtra-rare .crwon-royal-xr .share__span {
+      font-size: 13px;
+      text-transform: uppercase; }
+    .xtra-rare .crwon-royal-xr .share .social-links {
+      width: 29%;
+      display: inline-flex;
+      justify-content: space-evenly; }
+      .xtra-rare .crwon-royal-xr .share .social-links__link::before {
+        font-family: FontAwesome;
+        font-size: 19px; }
+      .xtra-rare .crwon-royal-xr .share .social-links__link--twitter::before {
+        content: '\f099'; }
+      .xtra-rare .crwon-royal-xr .share .social-links__link--pinterest::before {
+        content: '\f0d2'; }
+      .xtra-rare .crwon-royal-xr .share .social-links__link:hover::before {
+        color: #512d6e;
+        -webkit-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out; }
 
+.tasting-notes {
+  padding: 68px 0;
+  margin-bottom: 85px;
+  background-color: #0F583E;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase; }
+  .tasting-notes__h3 {
+    margin-bottom: 68px;
+    font-size: 35px;
+    letter-spacing: 8px; }
+  .tasting-notes__list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    justify-content: space-evenly; }
+  .tasting-notes__h6 {
+    margin-bottom: 39px;
+    color: #e3b87e;
+    font-size: 22px;
+    letter-spacing: 6px; }
+  .tasting-notes__p::first-letter {
+    text-transform: capitalize; }
+  .tasting-notes__p {
+    font-family: serif;
+    font-size: 18px;
+    text-transform: lowercase; }
 
-/*=================================
-  Header styling ends here
-=================================*/  
+.master-whiskies {
+  margin-bottom: 95px;
+  text-align: center;
+  text-transform: uppercase; }
+  .master-whiskies__h4 {
+    padding: 43px 0 55px;
+    color: #ad2beb;
+    font-size: 33px;
+    letter-spacing: 8px; }
+  .master-whiskies__list {
+    padding-bottom: 29px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center; }
+    .master-whiskies__list li {
+      flex-basis: 25%; }
+  .master-whiskies__figure {
+    margin-bottom: 36px; }
+  .master-whiskies__p {
+    color: #512d6e;
+    font-size: 23px;
+    letter-spacing: 1px; }
 
-/*=================================
-  main styling starts here
-=================================*/
+.footer {
+  padding-top: 95px; }
+  .footer__h5 {
+    width: 15%;
+    margin: 0 auto; }
 
-
-
-
-
-
-
-
-/*=================================
-  main styling ends here
-=================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
-
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  
+/*# sourceMappingURL=style.css.map */
