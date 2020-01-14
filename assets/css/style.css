@@ -155,6 +155,130 @@ li {
   .nav .hamburger {
     display: none; }
 
+<<<<<<< HEAD
+=======
+.banner {
+  padding: 100px 0 0;
+  text-align: center; }
+  .banner .wrapper {
+    position: relative; }
+  .banner__slider {
+    margin-top: 71px; }
+  .banner .slide {
+    width: 87%;
+    margin-left: 17%;
+    display: none; }
+  .banner .active {
+    display: block; }
+  .banner__slider__figure {
+    width: 40.5%;
+    display: inline-block;
+    vertical-align: top; }
+  .banner__info {
+    width: 44%;
+    display: inline-block;
+    vertical-align: top;
+    vertical-align: middle; }
+  .banner__h2 {
+    color: #ad2beb;
+    font-size: 31px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 2.4;
+    letter-spacing: 6px; }
+  .banner .learn-more {
+    padding: 16px 30px;
+    border: 2px solid #ad2beb;
+    color: #ad2beb;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px; }
+  .banner .learn-more:hover {
+    background-color: #ad2beb;
+    color: #fff;
+    -webkit-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out; }
+  .banner__prev, .banner__next {
+    text-indent: -9999px; }
+  .banner__prev::after, .banner__next::after {
+    float: right;
+    font-family: FontAwesome;
+    font-size: 54px;
+    text-indent: 0;
+    position: absolute;
+    bottom: 178px; }
+  .banner__prev:hover::after, .banner__next:hover::after {
+    color: #ad2beb;
+    -webkit-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out; }
+  .banner__prev::after {
+    content: '\f177';
+    left: 15%; }
+  .banner__next::after {
+    content: '\f178';
+    right: 0; }
+  .banner__figure {
+    width: 22%;
+    position: absolute;
+    top: 0;
+    z-index: -1; }
+
+.whiskies {
+  padding: 135px 0;
+  background: url("/assets/images/images.jpeg");
+  background-size: 100% 100%;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: .8; }
+  .whiskies:hover {
+    opacity: 1;
+    -webkit-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out; }
+
+.h3 {
+  margin-bottom: 81px;
+  font-size: 35px;
+  letter-spacing: 8px; }
+
+.paragraph {
+  margin-bottom: 17px;
+  font-family: serif;
+  font-size: 23px;
+  letter-spacing: 5px; }
+
+.recipes {
+  padding: 135px 0;
+  background: url("/assets/images/images (1).jpeg");
+  background-size: 100% 100%;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: .8; }
+  .recipes:hover {
+    opacity: 1;
+    -webkit-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out; }
+
+.blog {
+  padding: 135px 0;
+  background: url("/assets/images/download.jpeg");
+  background-size: 100% 100%;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: .8; }
+  .blog:hover {
+    opacity: 1;
+    -webkit-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out; }
+
+>>>>>>> feature-home
 .xtra-rare__list {
   margin-bottom: 138px; }
 .xtra-rare__link {
