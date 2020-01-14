@@ -115,7 +115,7 @@ h1 {
   justify-content: space-between; }
   .social-links__link {
     text-indent: -9999px; }
-    .social-links__link:before {
+    .social-links__link::before {
       float: right;
       color: #ad2beb;
       font-family: FontAwesome;
@@ -132,14 +132,14 @@ h1 {
     display: flex;
     align-items: flex-start;
     justify-content: space-between; }
-  .nav__list .nav__link:first-of-type {
-    font-family: FontAwesome;
-    content: '\f0c9'; }
   .nav__link {
     color: #ad2beb;
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 2px; }
+    .nav__link--active::before {
+      font-family: FontAwesome;
+      content: '\f0c9'; }
   .nav .hamburger {
     display: none; }
 
@@ -237,6 +237,7 @@ h1 {
     text-transform: lowercase; }
 
 .master-whiskies {
+  margin-bottom: 95px;
   text-align: center;
   text-transform: uppercase; }
   .master-whiskies__h4 {
@@ -245,6 +246,7 @@ h1 {
     font-size: 33px;
     letter-spacing: 8px; }
   .master-whiskies__list {
+    padding-bottom: 29px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -257,5 +259,11 @@ h1 {
     color: #512d6e;
     font-size: 23px;
     letter-spacing: 1px; }
+
+.footer {
+  padding-top: 95px; }
+  .footer__h5 {
+    width: 15%;
+    margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */
