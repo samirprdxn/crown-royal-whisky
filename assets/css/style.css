@@ -98,17 +98,17 @@ li {
   width: 92%;
   margin: 0 auto; }
 
-header {
+.header {
   padding: 40px 0; }
-  header .wrapper {
+  .header .wrapper {
     display: flex;
     align-items: flex-start;
     justify-content: space-between; }
-
-h1 {
-  flex-basis: 14.5%; }
+  .header__h1 {
+    flex-basis: 14.5%; }
 
 .social-links {
+  margin-top: 3px;
   flex-basis: 3.7%;
   display: flex;
   align-items: flex-start;
@@ -125,8 +125,14 @@ h1 {
       content: '\f16d'; }
     .social-links__link--facebook::before {
       content: '\f082'; }
+    .social-links__link:hover::before {
+      color: #512d6e;
+      -webkit-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      transition: .5s ease-in-out; }
 
 .nav {
+  margin-left: 6%;
   flex-basis: 68%; }
   .nav__list {
     display: flex;
@@ -138,8 +144,14 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 2px; }
     .nav__link--active::before {
-      font-family: FontAwesome;
-      content: '\f0c9'; }
+      content: '\f0c9';
+      padding-right: 9px;
+      font-family: FontAwesome; }
+    .nav__link:hover {
+      color: #512d6e;
+      -webkit-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      transition: .5s ease-in-out; }
   .nav .hamburger {
     display: none; }
 
@@ -152,6 +164,11 @@ h1 {
   font-weight: 600; }
   .xtra-rare__link--span {
     color: #512d6e; }
+  .xtra-rare__link:hover {
+    color: #512d6e;
+    -webkit-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out; }
 .xtra-rare__figure {
   width: 36%;
   padding-top: 100px;
@@ -191,6 +208,11 @@ h1 {
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 2px; }
+    .xtra-rare .crwon-royal-xr__link:hover {
+      background-color: #e3b87e;
+      -webkit-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      transition: .5s ease-in-out; }
   .xtra-rare .crwon-royal-xr .share {
     color: #ad2beb; }
     .xtra-rare .crwon-royal-xr .share__span {
@@ -207,6 +229,11 @@ h1 {
         content: '\f099'; }
       .xtra-rare .crwon-royal-xr .share .social-links__link--pinterest::before {
         content: '\f0d2'; }
+      .xtra-rare .crwon-royal-xr .share .social-links__link:hover::before {
+        color: #512d6e;
+        -webkit-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out; }
 
 .tasting-notes {
   padding: 68px 0;
