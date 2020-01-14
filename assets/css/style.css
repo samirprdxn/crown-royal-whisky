@@ -210,6 +210,7 @@ h1 {
 
 .tasting-notes {
   padding: 68px 0;
+  margin-bottom: 85px;
   background-color: #0F583E;
   color: #fff;
   text-align: center;
@@ -234,5 +235,27 @@ h1 {
     font-family: serif;
     font-size: 18px;
     text-transform: lowercase; }
+
+.master-whiskies {
+  text-align: center;
+  text-transform: uppercase; }
+  .master-whiskies__h4 {
+    padding: 43px 0 55px;
+    color: #ad2beb;
+    font-size: 33px;
+    letter-spacing: 8px; }
+  .master-whiskies__list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center; }
+    .master-whiskies__list li {
+      flex-basis: 25%; }
+  .master-whiskies__figure {
+    margin-bottom: 36px; }
+  .master-whiskies__p {
+    color: #512d6e;
+    font-size: 23px;
+    letter-spacing: 1px; }
 
 /*# sourceMappingURL=style.css.map */
