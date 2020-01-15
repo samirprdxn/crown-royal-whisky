@@ -170,10 +170,6 @@ li {
   .nav .hamburger {
     display: none; }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
 @media (max-width: 995px) {
   /* hamburger added */
   .nav {
@@ -247,7 +243,6 @@ li {
     transition: .5s ease-in-out; }
 
   /* hamburger styling end */ }
->>>>>>> feature-home
 .banner {
   padding: 100px 0 0;
   text-align: center; }
@@ -416,10 +411,14 @@ li {
   @media (max-width: 995px) {
     .blog {
       opacity: 1; } }
-
->>>>>>> feature-home
+@media (max-width: 995px) {
+  .xtra-rare {
+    text-align: center; } }
 .xtra-rare__list {
   margin-bottom: 138px; }
+  @media (max-width: 995px) {
+    .xtra-rare__list {
+      margin: 40px 0; } }
 .xtra-rare__link {
   color: #ad2beb;
   font-size: 12px;
@@ -438,6 +437,10 @@ li {
   display: inline-block;
   vertical-align: top;
   vertical-align: bottom; }
+  @media (max-width: 995px) {
+    .xtra-rare__figure {
+      width: 50%;
+      padding-top: 0; } }
 .xtra-rare .crwon-royal-xr {
   width: 39%;
   margin-left: 15%;
@@ -445,6 +448,10 @@ li {
   vertical-align: top;
   color: #162d71;
   text-align: center; }
+  @media (max-width: 995px) {
+    .xtra-rare .crwon-royal-xr {
+      width: 100%;
+      margin: 60px 0; } }
   .xtra-rare .crwon-royal-xr__h2 {
     margin-bottom: 40px;
     font-family: serif;
@@ -514,6 +521,13 @@ li {
     align-items: flex-start;
     justify-content: space-between;
     justify-content: space-evenly; }
+    @media (max-width: 995px) {
+      .tasting-notes__list {
+        flex-wrap: wrap; } }
+    @media (max-width: 995px) {
+      .tasting-notes__list li {
+        margin: 60px 0;
+        flex-basis: 100%; } }
   .tasting-notes__h6 {
     margin-bottom: 39px;
     color: #e3b87e;
@@ -541,8 +555,19 @@ li {
     align-items: flex-start;
     justify-content: space-between;
     align-items: center; }
+    @media (max-width: 995px) {
+      .master-whiskies__list {
+        flex-wrap: wrap;
+        justify-content: space-around; } }
     .master-whiskies__list li {
       flex-basis: 25%; }
+      @media (max-width: 995px) {
+        .master-whiskies__list li {
+          flex-basis: 40%; } }
+      @media (max-width: 540px) {
+        .master-whiskies__list li {
+          margin-bottom: 50px;
+          flex-basis: 80%; } }
   .master-whiskies__figure {
     margin-bottom: 36px; }
   .master-whiskies__p {
