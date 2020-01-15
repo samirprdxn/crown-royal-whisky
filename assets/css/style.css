@@ -188,9 +188,10 @@ li {
       z-index: 4; }
       .nav__list li {
         width: 100%;
-        padding-left: 0;
-        padding-right: 0;
+        padding: 0;
         border: 1px solid #fff;
+        border-right: 0;
+        border-left: 0;
         background-color: #512d6e;
         text-align: center;
         opacity: .8; }
@@ -411,6 +412,7 @@ li {
   @media (max-width: 995px) {
     .blog {
       opacity: 1; } }
+
 @media (max-width: 995px) {
   .xtra-rare {
     text-align: center; } }
